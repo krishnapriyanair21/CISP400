@@ -1,0 +1,25 @@
+main: main.o animal.o zoo.o bird.o eagle.o giraffe.o mammal.o reptile.o raccoon.o greenSeaTurtle.o crocodilla.o
+	g++ -pedantic main.o zoo.o animal.o eagle.o giraffe.o bird.o mammal.o reptile.o raccoon.o greenSeaTurtle.o crocodilla.o -o main
+main.o: main.cpp zoo.o animal.o bird.o eagle.o giraffe.o mammal.o reptile.o raccoon.o greenSeaTurtle.o crocodilla.o
+	g++ -pedantic -Wall main.cpp -c
+zoo.O: zoo.h zoo.cpp animal.o bird.o eagle.o giraffe.o mammal.o reptile.o raccoon.o greenSeaTurtle.o crocodilla.o
+	g++ -Wall -pedantic zoo.cpp -c
+eagle.o: eagle.cpp eagle.h bird.o
+	g++ -pedantic -Wall eagle.cpp -c
+giraffe.o: giraffe.cpp giraffe.h mammal.o 
+	g++ -pedantic -Wall giraffe.cpp -c
+raccoon.o: raccoon.cpp raccoon.h mammal.o
+	g++ -pedantic -Wall raccoon.cpp -c
+greenSeaTurtle.o: greenSeaTurtle.cpp greenSeaTurtle.h reptile.o
+	g++ -pedantic -Wall greenSeaTurtle.cpp -c
+crocodilla.o: crocodilla.cpp crocodilla.h reptile.o
+	g++ -pedantic -Wall crocodilla.cpp -c
+bird.o: bird.cpp bird.h animal.o
+	g++ -pedantic -Wall bird.cpp -c
+mammal.o: mammal.cpp mammal.h animal.o
+	g++ -pedantic -Wall mammal.cpp -c
+reptile.o: reptile.cpp reptile.h animal.o
+	g++ -pedantic -Wall reptile.cpp -c
+
+
+

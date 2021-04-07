@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1575500173 source:c:\users\krish\desktop\documents\arc\fall 2019\cisp 400\project #6\rubberarray\main.cpp
+	<iostream>
+	<fstream>
+	"RubberArray.h"
+
+1575936152 c:\users\krish\desktop\documents\arc\fall 2019\cisp 400\project #6\rubberarray\rubberarray.h
+	<iostream>
+	<fstream>
+	<iomanip>
+
